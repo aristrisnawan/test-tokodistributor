@@ -18,7 +18,7 @@ export default function Banner() {
     });
   }, []);
 
-  console.log(banner);
+  //   console.log(banner);
   return (
     <div>
       {/* <div className="mobile:w-full mobile:h-44 mobile:my-3 rounded bg-black"></div> */}
@@ -46,7 +46,7 @@ export default function Banner() {
                     style={{ backgroundImage: `url(${items.url_mobile})` }}
                   ></div>
                   <div
-                    className="w-full laptop:h-96 mobile:hidden tablet:hidden laptop:block desktop:block mobile:my-3 rounded bg-black bg-cover"
+                    className="w-full laptop:h-80 mobile:hidden tablet:hidden laptop:block desktop:block mobile:my-3 rounded bg-black bg-center bg-no-repeat"
                     style={{ backgroundImage: `url(${items.url})` }}
                   ></div>
                 </SwiperSlide>
