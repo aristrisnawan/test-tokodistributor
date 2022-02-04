@@ -25,7 +25,7 @@ export default function Product() {
               key={items.sub_menu_id}
             >
               <div
-                className="mobile:w-36 mobile:h-44 laptop:w-full bg-black rounded bg-cover"
+                className="mobile:w-36 mobile:h-44 laptop:w-full bg-black rounded-t bg-cover"
                 style={{ backgroundImage: `url(${items.image_uri})` }}
               ></div>
               <p className="font-medium text-ellipsis overflow-hidden">
