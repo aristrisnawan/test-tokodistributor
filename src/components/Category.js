@@ -11,7 +11,7 @@ export default function Category() {
       //   console.log(listCategory);
       setCategory(listCategory);
     });
-  });
+  }, []);
 
   return (
     <div>
