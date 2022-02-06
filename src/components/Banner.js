@@ -39,18 +39,18 @@ export default function Banner() {
         >
           {banner.map((items, index) => {
             return (
-              <div key={index}>
-                <SwiperSlide>
-                  <div
-                    className="w-full mobile:h-44 tablet:h-80 mobile:block tablet:block laptop:hidden desktop:hidden mobile:my-3 rounded bg-black bg-cover"
-                    style={{ backgroundImage: `url(${items.url_mobile})` }}
-                  ></div>
-                  <div
-                    className="w-full laptop:h-80 mobile:hidden tablet:hidden laptop:block desktop:block mobile:my-3 rounded bg-black bg-center bg-no-repeat"
-                    style={{ backgroundImage: `url(${items.url})` }}
-                  ></div>
-                </SwiperSlide>
-              </div>
+              // <div key={index}>
+              <SwiperSlide key={index}>
+                <div
+                  className="w-full mobile:h-44 tablet:h-80 mobile:block tablet:block laptop:hidden desktop:hidden mobile:my-3 rounded bg-gray-500 bg-cover"
+                  style={{ backgroundImage: `url(${items.url_mobile})` }}
+                ></div>
+                <div
+                  className="w-full laptop:h-80 mobile:hidden tablet:hidden laptop:block desktop:block mobile:my-3 rounded bg-gray-500 bg-center bg-no-repeat"
+                  style={{ backgroundImage: `url(${items.url})` }}
+                ></div>
+              </SwiperSlide>
+              // </div>
             );
           })}
         </Swiper>
