@@ -3,11 +3,12 @@ import Banner from "./Banner";
 import Category from "./Category";
 import Footer from "./Footer";
 import Product from "./Product";
+import Search from "./Search";
 
 function Layout() {
   return (
     <div className="mobile:px-3 tablet:px-7 laptop:px-11">
-      <h1>Search</h1>
+      <Search />
       <Banner />
       <Category />
       <Product />
