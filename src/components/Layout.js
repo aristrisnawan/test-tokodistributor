@@ -8,7 +8,7 @@ import Search from "./Search";
 function Layout() {
   return (
     <div className="mobile:px-3 tablet:px-7 laptop:px-11">
-      <Search />
+      {/* <Search /> */}
       <Banner />
       <Category />
       <Product />
